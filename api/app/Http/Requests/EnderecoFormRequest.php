@@ -23,6 +23,7 @@ class EnderecoFormRequest extends FormRequest
     {
         return [
             //
+            'pessoa_id' => 'required|exists:pessoas,id',
             'tipo_id' => 'required|exists:tipo_enderecos,id',
             'cep' => 'required|string',
             'logradouro' => 'required|string|max:255',
