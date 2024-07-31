@@ -7,5 +7,4 @@ use Illuminate\Http\Request;
 class PessoaController extends Controller
 {
     //
-    
 }
