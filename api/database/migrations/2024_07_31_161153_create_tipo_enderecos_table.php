@@ -11,15 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pessoas', function (Blueprint $table) {
+        Schema::create('tipo_enderecos', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->string('nome_social')->nullable();
-            $table->string('cpf')->unique();
-            $table->string('nome_pai')->nullable();
-            $table->string('nome_mae')->nullable();
-            $table->string('telefone')->nullable();
-            $table->string('email')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pessoas');
+        Schema::dropIfExists('tipo_enderecos');
     }
 };
