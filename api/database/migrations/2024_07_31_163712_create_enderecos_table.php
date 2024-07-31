@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('enderecos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('pessoa_id')->constrained('pessoas');
+            $table->foreignId('tipo_id')->constrained('tipo_enderecos');
             $table->string('cep');
             $table->string('logradouro');
             $table->string('numero');
