@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PessoaFormRequest;
 use App\Models\Pessoa;
 use Illuminate\Http\Request;
 
@@ -23,7 +24,7 @@ class PessoaController extends Controller
         return $query->paginate(5);
     }
 
-    public function store(Request $request)
+    public function store(PessoaFormRequest $request)
     {
         $pessoa = Pessoa::create($request->all());
 
@@ -40,7 +41,7 @@ class PessoaController extends Controller
        return $pessoaModel;
     }
 
-    public function update (Pessoa $pessoa, Request $request)
+    public function update (Pessoa $pessoa, PessoaFormRequest $request)
     {
         $pessoa->fill($request->all());
         $pessoa->save();

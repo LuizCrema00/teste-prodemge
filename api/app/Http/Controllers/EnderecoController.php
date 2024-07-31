@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\EnderecoFormRequest;
 use Illuminate\Http\Request;
 use App\Models\Endereco;
 
@@ -17,7 +18,7 @@ class EnderecoController extends Controller
         return $query->paginate(5); 
     }
 
-    public function store(Request $request)
+    public function store(EnderecoFormRequest $request)
     {
         $endereco = Endereco::create($request->all());
 
@@ -34,7 +35,7 @@ class EnderecoController extends Controller
        return $pessoaModel;
     }
 
-    public function update (Endereco $endereco, Request $request)
+    public function update (Endereco $endereco, EnderecoFormRequest $request)
     {
         $endereco->fill($request->all());
         $endereco->save();
