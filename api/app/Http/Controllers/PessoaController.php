@@ -11,8 +11,13 @@ class PessoaController extends Controller
     public function index(Request $request)
     {
         $query = Pessoa::query();
+        
         if ($request->has('nome')) {
-            $query->where('nome', $request->nome);
+            $query->where('nome', 'like', '%' . $request->nome . '%');
+        }
+
+        if ($request->has('cpf')) {
+            $query->where('cpf', $request->cpf);
         }
 
         return $query->paginate(5);
