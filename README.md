@@ -5,18 +5,18 @@ Sistema desenvolvido como avaliacao técnica
 O sistema primeiramente possui Autenticação, para acesso do sistema o usuário precisa estar logado.
 ![image](https://github.com/user-attachments/assets/1514eed2-ad05-48a0-8f56-322b67047737)
 
-Para conseguir um usuario autenticado siga as instrucoes de configuracao do projeto abaixo.
+Para conseguir um usuario autenticado siga as instruções de configuração do projeto que estarão abaixo.
 
 Após autenticado é exibida uma interface no modelo de CRUD Sistema de Cadastro.
 ![image](https://github.com/user-attachments/assets/d5085688-c9bd-4cb0-a0ea-d4178ba8bd13)
 
-Ao ir para cadastro de pessoa é exibida a seguinte modal
+Ao ir para cadastrar nova pessoa é exibida a seguinte modal
 ![image](https://github.com/user-attachments/assets/4fb5a1c6-70a1-40dd-b006-7943d06740e5)
 
-Cadastrando o usuário somo encaminhados para a modal de cadastrar um endereço
+Cadastrando o usuário o usuário é encaminhado para a modal de cadastrar um endereço
 ![image](https://github.com/user-attachments/assets/1f12d258-5c36-4a28-bcdd-bc81ffa3933f)
 
-Após cadastrado um usuário ele é exibido em uma tabela contendo nome e seu cpf
+Após cadastrada uma nova pessoa ela é exibido em uma tabela contendo nome e seu cpf
 ![image](https://github.com/user-attachments/assets/90415e37-83c7-4dca-a570-93d7c8b1b1b2)
 
 
