@@ -52,21 +52,29 @@ Siga os passos abaixo para configurar e executar o projeto localmente:
 3. ### Configuração do Ambiente
     cp .env.example .env
 
-   Copie o arquivo .env.example para .env e configure as variáveis de ambiente, como conexão com banco de dados.
+   Em seu SGBD crie o banco de dados teste-prodemge
+
+   Copie o arquivo .env.example para .env e configure as variáveis de ambiente, como conexão com banco de dados MYSQL.
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=teste-prodemge
+   DB_USERNAME=seu usuário
+   DB_PASSWORD=sua senha
 
 
-4. ### Migrations e seeders
-
+5. ### Migrations e seeders
+   
    php artisan migrate
 
    Executa as migrations de tabelas para o banco de dados
 
    php artisan db:seed
 
-   Roda as seeders e popula as tabelas Users tipo_enderecos
+   Roda as seeders e popula as tabelas users e tipo_enderecos
    Para a tabela Users, criará um usuário autenticado na aplicação.
    
-   Nome: admin
+   Nome: Admin
    
    Email: admin@admin.com
    
