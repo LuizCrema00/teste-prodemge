@@ -1,6 +1,6 @@
 # CRUD Sistema de cadastro
 
-Sistema CRUD de cadastro desenvolvido como avaliacao técnica
+Sistema desenvolvido como avaliacao técnica
 
 O sistema primeiramente possui Autenticação, para acesso do sistema o usuário precisa estar logado.
 ![image](https://github.com/user-attachments/assets/1514eed2-ad05-48a0-8f56-322b67047737)
